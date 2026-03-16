@@ -43,7 +43,7 @@ Service *undoStack = NULL;
 string nama, namaLog;
 
 void updateServ() // Function untuk menambahkan data service ke file Service3.txt
-{ // Function untuk menambahkan data ke file Service3.txt
+{
     ofstream fileServ("Service3.txt", ios::trunc);
     Service* serv = servHistory;
     while(serv != NULL)
@@ -216,36 +216,9 @@ void serviceBaru() // Function untuk total data (service & customer) baru
                 if (konfirm == "Y" || konfirm == "y")
                 {
                     cekServ -> kendala = cekServ -> kendala + " + " + servBaru -> kendala;
-                    
-                    if (cekServ != tailHistory) 
-                    {
-                        if (cekServ -> allprev != NULL) 
-                            cekServ -> allprev -> allnext = cekServ -> allnext;
-                        else 
-                            servHistory = cekServ -> allnext;
-                            
-                        if (cekServ -> allnext != NULL)
-                            cekServ -> allnext -> allprev = cekServ -> allprev;
-                        
-                        tailHistory -> allnext = cekServ;
-                        cekServ -> allprev = tailHistory;
-                        cekServ -> allnext = NULL;
-                        tailHistory = cekServ;
-                    }
-                    int antrian = 1;
-                    Service *antri = servHistory;
-                    while (antri != NULL)
-                    {
-                        if (antri -> doneServ == "0")
-                        {
-                            antri -> noAntri = to_string(antrian);
-                            antrian++;
-                        }
-                        antri = antri -> allnext;
-                    }
-
+                    servBaru -> kendala = cekServ -> kendala;
                     updateServ(); 
-                    cout << endl << "*Kendala sudah di update, nomor antrian " << namaAkhir << " adalah " << cekServ -> noAntri << "*" << endl;
+                    cout << endl << "*Kendala sudah di update*" << endl;
                     delete servBaru;
                     system("pause");
                     return; 

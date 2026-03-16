@@ -16,17 +16,8 @@ Suby
 15-03-2026
 1
 
-Habibi
-1
-SUV
-Mitsubishi Pajero
-Oli bocor
-Suby
-15-03-2026
-0
-
 Tiar
-2
+1
 Hatchback
 Toyota Yaris
 Mogok
@@ -35,7 +26,7 @@ Aldo
 0
 
 Tiar
-3
+2
 Supercar
 McLaren Senna
 Ganti Spion
@@ -44,11 +35,47 @@ Suby
 0
 
 Fajri
-4
+3
 Sport
 Mercedes AMG GT
 Ganti Spion
 Aldo
+15-03-2026
+0
+
+Talitha
+4
+Coupe
+BMW M3
+Wiper macet
+Dimas
+16-03-2026
+0
+
+Talitha
+5
+Sport
+Mercedes AMG Performance
+Kaca pecah
+Suby
+16-03-2026
+0
+
+Habibi
+6
+Sport
+Ferrari F80
+Ban bocor + Pasang decal
+Farhan
+16-03-2026
+0
+
+Habibi
+7
+SUV
+Mitsubishi Pajero
+Oli bocor + Ganti spion
+Suby
 15-03-2026
 0
 
