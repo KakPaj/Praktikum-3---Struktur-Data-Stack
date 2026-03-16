@@ -5,6 +5,7 @@ using namespace std;
 struct Customer;
 struct Service;
 int tutup = 0;
+bool finish = false;
 
 
 struct Customer
@@ -185,7 +186,7 @@ void serviceBaru() // Function untuk total data (service & customer) baru
     }
 
     cout << "Tipe Mobil: ";
-    cin >> ws; // Mencegah bug enter kesekip
+    cin >> ws;
     getline(cin, servBaru -> tipeMobil);
     cout << "Merek Mobil: ";
     getline(cin, servBaru -> merekMobil);
@@ -918,6 +919,7 @@ void adminMenu() // Function untuk menampilkan UI dari Admin
         else if (pil == 4)
         {
             namaLog = "";
+            finish = false;
         }
         else
         {
@@ -930,7 +932,6 @@ void adminMenu() // Function untuk menampilkan UI dari Admin
 
 void Menu() // Function untuk menampilkan UI dari Menu
 {
-    bool finish = false;
     string nomor;
     while (!finish)
     {
