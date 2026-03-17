@@ -218,7 +218,7 @@ void serviceBaru() // Function untuk total data (service & customer) baru
                     cekServ -> kendala = cekServ -> kendala + " + " + servBaru -> kendala;
                     servBaru -> kendala = cekServ -> kendala;
                     updateServ(); 
-                    cout << endl << "*Kendala sudah di update*" << endl;
+                    cout << endl << "*Kendala " << servBaru -> merekMobil << " sudah di update, nomor antrian " << namaAkhir << " adalah " << cekServ -> noAntri << "*" << endl;
                     delete servBaru;
                     system("pause");
                     return; 
